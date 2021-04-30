@@ -45,7 +45,7 @@ img{
 h1,
 #g-nav-list li:nth-child(1),
 #menu h2,
-#blog h2,
+#menu h2,
 #footer dl dd,
 #splash-logo{
     font-family:'Parisienne', cursive;
@@ -53,7 +53,7 @@ h1,
 
 /* heading */
 #menu h2,
-#blog h2{
+#menu h2{
     font-size: 4rem;
     text-align: center;
     margin: 0 0 50px 0;
@@ -63,7 +63,7 @@ h1,
 
 @media screen and (max-width:768px) {
 #menu h2,
-#blog h2{
+#menu h2{
     font-size: 3rem;
     }
     
@@ -424,12 +424,12 @@ _:-ms-lang(x)::-ms-backdrop, #lead .lead-area p{
     margin:0 0 30px 0;
 }
 
-/* blog */
+/* menu */
 
-#blog{
+#menu{
     margin:0 0 50px 0;
 }
-.blog-area{
+.menu-area{
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -437,140 +437,140 @@ _:-ms-lang(x)::-ms-backdrop, #lead .lead-area p{
     overflow: hidden;
 }
 
-.blog-area article:nth-of-type(1){ 
+.menu-area article:nth-of-type(1){ 
     width:30%;
 }
 
-.blog-area .blog-block{
+.menu-area .menu-block{
     width:68%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.blog-area .blog-block article{
+.menu-area .menu-block article{
      margin:0 0 3vh 0;   
 }
 
-.blog-area .blog-block article:nth-of-type(1){ 
+.menu-area .menu-block article:nth-of-type(1){ 
     width:42%;
     animation-delay: 0.5s;
 }
-.blog-area .blog-block article:nth-of-type(2){ 
+.menu-area .menu-block article:nth-of-type(2){ 
     width:20%;
     animation-delay: 1.5s;
 }
-.blog-area .blog-block article:nth-of-type(3){
+.menu-area .menu-block article:nth-of-type(3){
     width:32%;
     animation-delay: 1s;
 }
 
-.blog-area .blog-block article:nth-of-type(4){ 
+.menu-area .menu-block article:nth-of-type(4){ 
     width:32%;
     animation-delay: .8s;
 }
-.blog-area .blog-block article:nth-of-type(5){
+.menu-area .menu-block article:nth-of-type(5){
     width:20%; 
     animation-delay: 1.8s;
 }
-.blog-area .blog-block article:nth-of-type(6){
+.menu-area .menu-block article:nth-of-type(6){
     width:42%;
     animation-delay: 1.5s;
 }
 
 @media screen and (max-width:1300px) {
-    .blog-area .blog-block article:nth-of-type(n+1){ 
+    .menu-area .menu-block article:nth-of-type(n+1){ 
         width:48%;
     }
 }
 
 @media screen and (max-width:820px) {
-    .blog-area article:nth-of-type(1){
+    .menu-area article:nth-of-type(1){
         width:50%;
         margin:0 auto 3vh auto;
     }
 
-    .blog-area .blog-block article:nth-of-type(1){
+    .menu-area .menu-block article:nth-of-type(1){
          margin: 0 0 3vh 0;
     }
 
-    .blog-area .blog-block{
+    .menu-area .menu-block{
             width:100%;
     }
 }
 
 @media screen and (max-width:768px){
-    .blog-area .blog-block article:nth-of-type(n+1){ 
+    .menu-area .menu-block article:nth-of-type(n+1){ 
         animation-delay: .5s;
     }
 
-    .blog-area article:nth-of-type(1){
+    .menu-area article:nth-of-type(1){
         width:100%;
     }
 }
 
 @media screen and (max-width:450px){
-.blog-area .blog-block article:nth-of-type(n+1) {
+.menu-area .menu-block article:nth-of-type(n+1) {
     width:100%;
     animation-delay: 0s!important;
     }
 }
 
 
-.blog-area h3{
+.menu-area h3{
     font-size:1rem;
     margin: 0 0 20px 0;
 }
 
 @media screen and (max-width:450px){
 
-  .blog-area h3{
+  .menu-area h3{
     font-size:0.9rem;
 }
     
-  .blog-area p{
+  .menu-area p{
   display: none;
     }
 }
 
-.blog-area time{
+.menu-area time{
      font-size: 0.8rem;   
 }
 
-.blog-area img{
+.menu-area img{
     width: auto;
     height:32vh;   
 }
 
-.blog-area article:nth-of-type(1) img{
+.menu-area article:nth-of-type(1) img{
     height:67vh;
 }
   
-.blog-area .blog-block article:nth-of-type(1) img{
+.menu-area .menu-block article:nth-of-type(1) img{
     height:32vh;   
 }
 
 
 @media screen and (max-width:820px) {
-.blog-area article:nth-of-type(1) img{
+.menu-area article:nth-of-type(1) img{
     width:100%;
     height:auto;
 } 
-.blog-area .blog-block article:nth-of-type(1) img{
+.menu-area .menu-block article:nth-of-type(1) img{
     width:auto;
     height:32vh;
     }
 }
   
 @media screen and (max-width:450px){
-.blog-area img,
-.blog-area .blog-block article:nth-of-type(1) img{
+.menu-area img,
+.menu-area .menu-block article:nth-of-type(1) img{
     width:100%;
     height:auto;
 }
 }
 
-.blog-area figure time{
+.menu-area figure time{
     position: absolute;
     bottom:0;
     left:0;
@@ -581,13 +581,13 @@ _:-ms-lang(x)::-ms-backdrop, #lead .lead-area p{
     color: #fff;
 }
 
-.blog-area p{
+.menu-area p{
      margin:0 0 20px 0; 
     text-align: left;
     font-size: 0.9rem;
 }
 
-.blog-area span{
+.menu-area span{
      border:1px solid rgba(255,255,255,0.7);
     display: inline-block;
     padding:5px 10px;

@@ -23,8 +23,8 @@ function setFadeElement(){
 	var scroll = $(window).scrollTop(); //スクロール値を取得
     
     //出現範囲の指定
-	var contentsTop = Math.round($('#blog').offset().top);	//要素までの高さを取得
-	var contentsH = $('#blog').outerHeight(true);	//要素の高さを取得
+	var contentsTop = Math.round($('#menu').offset().top);	//要素までの高さを取得
+	var contentsH = $('#menu').outerHeight(true);	//要素の高さを取得
     
     //2つ目の出現範囲の指定※任意
 	var contentsTop2 = Math.round($('#footer').offset().top);	//要素までの高さを取得

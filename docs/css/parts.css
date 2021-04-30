@@ -8,7 +8,7 @@
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background:#e2a2b1;
+	background:#9ad6ac;
 	z-index: 9999999;
 	text-align:center;
 	color:#fff;
@@ -49,7 +49,7 @@ body.appear .splashbg1{
     top: 0;
 	left:50%;
     transform: scaleX(1);
-    background-color:#e2a2b1;/*伸びる背景色の設定*/
+    background-color:#9ad6ac;/*伸びる背景色の設定*/
 }
 
 @keyframes PageAnime{
@@ -80,7 +80,7 @@ body.appear .splashbg2{
     top: 0;
 	right:50%;
     transform: scaleX(1);
-    background-color:#e2a2b1;/*伸びる背景色の設定*/
+    background-color:#9ad6ac;/*伸びる背景色の設定*/
 }
 
 @keyframes PageAnime2{
@@ -143,7 +143,7 @@ body.appear #wrapper{
 	top:0;
 	width:100%;
     height: 100vh;/*ナビの高さ*/
-	background:rgba(266,162,172,0.8);/*背景を少し透過させる*/
+	background:rgba(100,100,100,0.8);/*背景を少し透過させる*/
     /*動き*/
 	transition: all 0.3s;
 }
@@ -269,7 +269,7 @@ body.appear #wrapper{
 	left:10px;
 	bottom:10px;
     /*テキストの形状*/
-	color: #eee;
+	color: #0a2703;
 	font-size: 0.7rem;
 	letter-spacing: 0.05em;
 	/*縦書き設定*/
@@ -289,7 +289,7 @@ body.appear #wrapper{
 	width:10px;
 	height:10px;
 	border-radius: 50%;
-	background:#eee;
+	background:#39b15d;
     /*丸の動き1.6秒かけて透過し、永遠にループ*/
 	animation:
 		circlemove 1.6s ease-in-out infinite,
@@ -526,32 +526,6 @@ body.appear #wrapper{
     transform: rotate(45deg);
 }
 
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-    text-align:center;
-	margin:20px 0 0 0;
-}
-
-.slick-dots li {
-    display:inline-block;
-	margin:0 5px;
-}
-
-.slick-dots button {
-    color: transparent;
-    outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
-    display:block;
-    border-radius:50%;
-    background:#ccc;/*ドットボタンの色*/
-}
-
-.slick-dots .slick-active button{
-    background:#e2a2b1;/*ドットボタンの現在地表示の色*/
-}
-
 /*==================================================
    印象編 4 最低限おぼえておきたい動き
 ===================================*/
@@ -762,7 +736,7 @@ span.mask{
 	opacity:0;/*透過0*/
 	transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
     transform: translateY(100%);
-	background:#e2a2b2;/*背景色*/
+	background:#c1e2a2;/*背景色*/
 	width:100%;
 	height: 100%;	
 }

@@ -56,42 +56,7 @@ $('#page-top').click(function () {
     return false;//リンク自体の無効化
 });
 
-/*===========================================================*/
-/* 複数画像を並列に見せる*/
-/*===========================================================*/
 
-	$('.slider').slick({
-		autoplay: true,//自動的に動き出すか。初期値はfalse。
-		infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-		slidesToShow: 4,//スライドを画面に3枚見せる
-		slidesToScroll: 4,//1回のスクロールで3枚の写真を移動して見せる
-		prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
-		nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-		dots: true,//下部ドットナビゲーションの表示
-		responsive: [
-            {
-			breakpoint: 1200,//モニターの横幅が1200px以下の見せ方
-			settings: {
-				slidesToShow: 3,//スライドを画面に2枚見せる
-				slidesToScroll: 3,//1回のスクロールで2枚の写真を移動して見せる
-			}
-		},
-			{
-			breakpoint: 769,//モニターの横幅が769px以下の見せ方
-			settings: {
-				slidesToShow: 2,//スライドを画面に2枚見せる
-				slidesToScroll: 2,//1回のスクロールで2枚の写真を移動して見せる
-			}
-		},
-		{
-			breakpoint: 426,//モニターの横幅が426px以下の見せ方
-			settings: {
-				slidesToShow: 1,//スライドを画面に1枚見せる
-				slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
-			}
-		}
-	]
-	});
 
 /*===========================================================*/
 /*  最低限おぼえておきたい動き/
@@ -237,14 +202,12 @@ $(window).scroll(function () {
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load',function(){
     
-    $("#splash-logo").delay(1200).fadeOut('slow');//ロゴを1.2秒でフェードアウトする記述 
-    
     //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
 
     $("#splash").delay(1500).fadeOut('slow',function(){//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
     $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
      
-    /* 印象編 8-17 テキストがほのかに光りながら出現*/  
+/* テキストがほのかに光りながら出現 */  
 	//spanタグを追加する
 	var element = $(".glowAnime");
 	element.each(function () {
@@ -268,19 +231,19 @@ $(window).on('load',function(){
 	GlowAnimeControl(); 
 	
     });
-    //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
+    //=====splashエリアフェードアウト後
   
     /*===========================================================*/
-    /*  背景色が伸びる（中央から外）*/
+    /*  背景伸長（中央から外）*/
     /*===========================================================*/
     
-    //=====ここから背景が伸びた後に動かしたいJSをまとめる
+    //=====背景伸長後
     $('.splashbg1').on('animationend', function() {
-	setFadeElement();//機能編 8-1-4ページ内にある指定の範囲内で下から出現の関数を呼ぶ
-    fadeAnime();// 印象編 4 最低限おぼえておきたい動きの関数を呼ぶ
-    slideAnime();//印象編 8-2 テキストが流れるように出現（左から右）の関数を呼ぶ
-	BlurTextAnimeControl();//印象編 8-9 テキストがじわっと出現の関数を呼ぶ  
-	});
-    //=====ここまで背景が伸びた後に動かしたいJSをまとめる
+	    setFadeElement();
+      fadeAnime();
+      slideAnime();
+		  BlurTextAnimeControl();  
+	  });
+    //=====背景が伸長後
 
-});// ここまでページが読み込まれたらすぐに動かしたい場合の記述
+});// ページが読み込み時直後

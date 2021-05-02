@@ -46,8 +46,7 @@ h1,
 #g-nav-list li:nth-child(1),
 #menu h2,
 #menu h2,
-#footer dl dd,
-#splash-logo{
+#footer dl dd{
     font-family:'Parisienne', cursive;
 }
 

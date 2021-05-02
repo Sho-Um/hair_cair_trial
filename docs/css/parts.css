@@ -122,7 +122,7 @@ body.appear #wrapper{
 }
 
 /*==================================================
-    クリックしたらナビ背景コンテンツがぼかされる※IE11非対応
+  クリックしたらナビ背景コンテンツがぼかされる※IE11非対応
 ===================================*/
 
 /*========= ぼかしのためのCSS ===============*/
@@ -137,21 +137,21 @@ body.appear #wrapper{
 #g-nav{
     /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
     position:fixed;
-	z-index: -1;
-	opacity: 0;/*はじめは透過0*/
+		z-index: -1;
+		opacity: 0;/*はじめは透過0*/
     /*ナビの位置と形状*/
-	top:0;
-	width:100%;
+		top:0;
+		width:100%;
     height: 100vh;/*ナビの高さ*/
-	background:rgba(100,100,100,0.8);/*背景を少し透過させる*/
+		background:rgba(100,100,100,0.8);/*背景を少し透過させる*/
     /*動き*/
-	transition: all 0.3s;
+		transition: all 0.3s;
 }
 
 /*アクティブクラスがついたら透過なしにして最前面へ*/
 #g-nav.panelactive{
-	opacity: 1;
-	z-index:999;
+		opacity: 1;
+		z-index:999;
 }
 
 /*ナビゲーションの縦スクロール*/
@@ -202,11 +202,11 @@ body.appear #wrapper{
 
 /*ボタン外側*/
 .openbtn{
-	position:fixed;
+		position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
-	top:10px;
-	right: 10px;
-	cursor: pointer;
+		top:10px;
+		right: 10px;
+		cursor: pointer;
     width: 50px;
     height:50px;
 }
@@ -219,17 +219,17 @@ body.appear #wrapper{
     position: absolute;
     left: 13px;
     height: 3px;
-	background-color: #666;
+		background-color: #666;
   }
 
 
 .openbtn span:nth-of-type(1) {
-	top:22px;	
+		top:22px;	
   	width: 50%;
 }
 
 .openbtn span:nth-of-type(2) {
-	top:29px;
+		top:29px;
   	width:30%;
 }
 
@@ -255,25 +255,25 @@ body.appear #wrapper{
 
 /*スクロールダウン全体の場所*/
 .scrolldown2{
-    /*描画位置※位置は適宜調整してください*/
-	position:fixed;
-	bottom:10px;
-	left:50%;
+  /*描画位置※位置は適宜調整してください*/
+		position:fixed;
+		bottom:10px;
+		left:50%;
     z-index: 2;
 }
 
 /*Scrollテキストの描写*/
 .scrolldown2 span{
     /*描画位置*/
-	position: absolute;
-	left:10px;
-	bottom:10px;
+		position: absolute;
+		left:10px;
+		bottom:10px;
     /*テキストの形状*/
-	color: #0a2703;
-	font-size: 0.7rem;
-	letter-spacing: 0.05em;
+		color: #0a2703;
+		font-size: 0.7rem;
+		letter-spacing: 0.05em;
 	/*縦書き設定*/
-	-ms-writing-mode: tb-rl;
+		-ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
 }
@@ -286,12 +286,12 @@ body.appear #wrapper{
     bottom:0;
     left:-4px;
     /*丸の形状*/
-	width:10px;
-	height:10px;
-	border-radius: 50%;
-	background:#39b15d;
+		width:10px;
+		height:10px;
+		border-radius: 50%;
+		background:#39b15d;
     /*丸の動き1.6秒かけて透過し、永遠にループ*/
-	animation:
+		animation:
 		circlemove 1.6s ease-in-out infinite,
 		cirlemovehide 1.6s ease-out infinite;
 }
@@ -330,24 +330,24 @@ body.appear #wrapper{
 /* ボタン共通設定 */
 .btn04 {
     /*線の基点とするためrelativeを指定*/
-	position: relative;
+		position: relative;
     /*ボタンの形状*/
-	display:inline-block;
+		display:inline-block;
     padding:10px 30px;
-	color:#333;
-	border:1px solid #ccc;
+		color:#333;
+		border:1px solid #ccc;
     text-decoration: none;
     outline: none;
     /*はみ出す背景色を隠す*/
- 	overflow: hidden;
+ 		overflow: hidden;
 }
 
 /*hoverした際のボタンの形状*/
 .btn04:hover {
-	color:#fff;
-	border-color: transparent;
+		color:#fff;
+		border-color: transparent;
     /*色の変化を遅らせる*/
-	transition-delay: .6s;
+		transition-delay: .6s;
 }
 
 /*線の設定*/
@@ -490,7 +490,7 @@ body.appear #wrapper{
     最低限おぼえておきたい動き
 ===================================*/
 
-/* 4-1 ふわっ（その場で） */
+/* ふわっと */
 .fadeIn{
 animation-name: fadeInAnime;
 animation-duration:2s;/*ゆっくり出現するため数値変更*/
@@ -507,7 +507,7 @@ opacity:0;
     opacity: 1;
   }
 }
-/* 4-4 ボンッ（拡大） */
+/* (拡大） */
 .zoomOut{
 	animation-name: zoomOutAnime;
 	animation-duration:0.5s;
@@ -541,7 +541,7 @@ opacity:0;
 /*全共通*/
 
 .slide-in {
-	overflow: hidden;
+		overflow: hidden;
     display: inline-block;
     padding: 0 10px;/*英語がはみ出るので見えるように余白追記*/
 }
